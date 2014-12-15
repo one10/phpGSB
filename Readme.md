@@ -28,7 +28,7 @@ $ composer require samcleaver/phpgsb
 3. Look at listupdater.php and lookup.php example files for basic methods on using the system.
 4. If you choose to use listupdater.php as-is then set it as a cron job/scheduled task to run every minute. *(It won't actually update every minute but is required incase of backoff procedures and timeouts)*
 
-5. Optional: set up a simple REST service based on lookup.fastcgi.php, FastCGI and a web server. E.g., configure an Nginx/FastCGI combo to point at the phpGSB directory, and see usage URL examples inside lookup.fastcgi.php
+5. Optional: set up a simple REST service based on lookup.fastcgi.php, FastCGI and a web server. E.g., configure an Nginx/FastCGI combo to point at the phpGSB directory, and see usage URL examples inside lookup.fastcgi.php. Works relatively well, tested on 100s of lookups/second. 
 
 ## FAQ
 
